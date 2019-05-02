@@ -1,0 +1,12 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "interface-name": [false, "always-prefix"],
+    "no-console": [false, "log", "error"],
+    "no-namespace": false,
+    "no-internal-module": false,
+    "arrow-parens": false,
+    "max-line-length": [true, 150],
+    "object-literal-sort-keys": false
+  }
+}

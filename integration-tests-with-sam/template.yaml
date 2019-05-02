@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Integration tests with Sam
+
+Globals:
+    Function:
+        Timeout: 3
+
+Resources:
+    MyLambdaFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: target/mylambda-1.0-SNAPSHOT-jar-with-dependencies.jar
+            Handler: se.switchcase.javasam.MainHandler
+            Runtime: java8
+            Events:
+                ApiCall:
+                    Type: Api
+                    Properties:
+                        Path: /v1
+                        Method: get

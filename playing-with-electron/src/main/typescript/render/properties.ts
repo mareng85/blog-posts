@@ -1,0 +1,6 @@
+
+class Properties {
+
+}
+
+export = Properties;

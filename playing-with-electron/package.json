@@ -1,0 +1,38 @@
+{
+  "name": "s3browser",
+  "productName": "S3Browser",
+  "version": "0.1.0",
+  "description": "S3Browser",
+  "main": "src/main/app/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron src/main/app/js",
+    "webpack-dev": "webpack --config webpack.config.dev.js",
+    "webpack-prod": "webpack --config webpack.config.prod.js"
+  },
+  "author": "Marc Engström",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.303.0",
+    "font-awesome": "^4.7.0",
+    "react-dropzone": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/electron": "^1.6.10",
+    "@types/node-ipc": "^9.1.1",
+    "@types/react": "^16.4.12",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-dropzone": "^4.2.2",
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "ts-loader": "^4.5.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
